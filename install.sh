@@ -16,3 +16,5 @@ sudo nano agent.json
 
 sudo service aws-kinesis-agent start
 sudo chkconfig aws-kinesis-agent on
+cd ˜
+sudo ./LogGenetator.py 500000

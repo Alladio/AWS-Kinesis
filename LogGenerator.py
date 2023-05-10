@@ -1,12 +1,3 @@
-#!/usr/bin/python3
-
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb  4 12:01:21 2019
-
-@author: Frank
-"""
-
 import csv
 import time
 import sys
@@ -26,7 +17,8 @@ def MakeLog(startLine, numLines):
         with open(destData, 'w') as dstfile:
             reader = csv.reader(csvfile)
             writer = csv.writer(dstfile)
-            next (reader) #skip header
+            #skip header
+            next (reader) 
             inputRow = 0
             linesWritten = 0
             for row in reader:
